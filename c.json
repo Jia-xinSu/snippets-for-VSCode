@@ -1,0 +1,85 @@
+{
+	// Place your snippets for c here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Creat function": {
+		"prefix": "crtFunction",
+		"body": [
+			"/*",
+			" *@name: ${1:nameOfFunction}",
+			" *@retVal: /type ${2:typeOfReturnValue}",
+			" *@para: /type ${3:typeOfReturnValue}",
+			" *       /arg &{4:arg to be input}",
+			" *@brif: ${5:Description of the function}",
+			" *@{",
+			" */",
+			"${2:typeOfReturnValue} ${1:nameOfFunction}()",
+			"{",
+			"${0:body}",
+			"}",
+			"/*",
+			" *@}",
+			" */"
+		],
+		"description": "Creat a function"
+	},
+	" Initialize a Standrad C Project":{
+		"prefix": "initPjct",
+		"body": [
+			"/*",
+			" *@project: ${1:project name}",
+			" *@author: ${2:author's name}",
+			" *@version: ${3:version of the last change}",
+			" *@date: ${4:date of the last change}",
+			" *@description:${5:description of this project}",
+			" *@changes: ${6:changes between this version and last version}",
+			" */",
+			" ",
+			"/*",
+			" *@includes",
+			" *@{",
+			" */",
+			"include <stdio.h>",
+			"${7:includes}",
+			"/*",
+			" *@}",
+			" */",
+			" ",
+			"/*",
+			"  *@macros",
+			"  *@{",
+			"*/",
+			"${8:macros}",
+			"/*",
+			" *@}",
+			" */",
+			" ",
+			"/*",
+			" *@global variables",
+			" *@{",
+			" */",
+			"${9:global variables}",
+			"/*",
+			" *@}",
+			" */",
+			" ",
+			"int main(int argc char *argv[])",
+			"{",
+			"    //add code here.",
+			"    return 0;",
+			"}"
+		],
+		"description": "Initialize a Standrad C Project"
+	},
+	
+}
